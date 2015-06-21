@@ -1,8 +1,6 @@
 1) How did viewing a diff between two versions of a file help you see the bug that was introduced?
-Encontrar bugs em arquivos grandes pode ser complicado.
-Se nós temos uma versão anterior do arquivo esta tarefa pode ser simplificada.
-Basta nos atermos a olhar as linhas que foram alteradas.
-Para isso podemos usar o comando fc.exe arquivo1 arquivo2
+If we have a previous version of the file, we can find and introduced bug easier by viewing the difference between versions.
+We just need to look at the changed lines of the changed files.
 
 2) How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
 We can use version history to:
@@ -22,10 +20,17 @@ Cons:
 
 4) Why do you think some version control systems, like Git, allow saving multiple files in one commit,
 while others, like Google Docs, treat each file separately?
+- Git was made with programmers in mind. And each commit was designed to keep one logical change only.
+In programming, one logical change may spread throug more than one file.
 
 
 5) How can you use the commands git log and git diff to view the history of files?
+Git log will list your commits
+Git diff will compair to different commits
 
 6) How might using version control make you more confident to make changes that could break something?
+If you have commited a working version of a project, you can change it as you wish. If everything goes wrong,
+you may checkout the commit that contains the workking version and everithing will go back as it was before all changes
 
 7) Now that you have your workspace set up, what do you want to try using Git for?
+Making changes on a huge old project that must be improved but can not get broken!
